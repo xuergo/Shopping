@@ -1,0 +1,653 @@
+* {
+	margin: 0px 0px;
+	padding: 0px 0px;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	font-family: "Microsoft YaHei", tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+	font-size: 12px;
+	background-color: #f2f2f2;
+}
+
+a {
+	color: #999999;
+}
+
+.container {
+	/*共用容器宽度*/
+	width: 1230px;
+	height: 100%;
+	margin: 0 auto;
+	min-width: 1260px;
+	/* border: aqua 1px solid; */
+
+}
+
+
+
+.icon {
+	/* 阿里图标 */
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.15em;
+	fill: currentColor;
+	overflow: hidden;
+	font-size: 16px;
+}
+
+/* 浮动顶部start */
+#fixed_Top {
+	/* display: none; */
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(255, 0, 54, 0.98);
+	z-index: 1000;
+	display: none;
+}
+
+#fixed_Top .container {
+	color: white;
+	font-size: 20px;
+	line-height: 50px;
+}
+
+#fixed_Top input {
+	width: 550px;
+	height: 15px;
+	padding: 5px 3px;
+	margin-left: 228px;
+	border: #FF0000 2px solid;
+}
+
+#fixed_Top .sub_button {
+	position: absolute;
+	top: -10px;
+	margin-top: 10px;
+	width: 120px;
+	height: 50px;
+	border: 0;
+	background-color: rgba(255, 0, 54, 0.1);
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 5px;
+	color: white;
+	line-height: 50px;
+}
+
+/* 浮动顶部end */
+
+
+
+/* 顶部栏start */
+
+
+
+
+#top {
+	height: 32px;
+
+	color: #999999;
+}
+
+#top>.container>.top_left {
+	float: left;
+	width: 218px;
+	height: 32px;
+	min-width: 218px;
+	/* 	border: red 1px solid; */
+	line-height: 32px;
+}
+
+.top_left a {
+	padding-left: 12px;
+
+}
+
+#top>.container>.top_right {
+	float: right;
+	width: 506px;
+	height: 32px;
+	/* border: red 1px solid; */
+	line-height: 32px;
+}
+
+.top_right>ul {
+	float: right;
+}
+
+.top_right>ul>li {
+	float: left;
+	margin-left: 10px;
+	padding-left: 5px;
+	position: relative;
+}
+
+/* 收藏夹 */
+	
+.lovesfather{
+	background-color: white;
+	border-left: #E0E0E0 0.05px solid;
+}
+
+.loves {
+	width: 80px;
+	height: 50px;
+	border: #E0E0E0 0.05px solid; 
+	border-top: 0px;
+	background-color: white;
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	z-index: 1000;
+	line-height: 23px;
+	display: none;
+}
+
+/* 商家 */
+.business{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* 顶部栏end */
+/* SOSO栏start */
+#soso {
+
+	height: 130px;
+	background-color: white;
+
+}
+
+.soso_left {
+	float: left;
+	width: 240px;
+	height: 130px;
+	/* border: red 1px solid; */
+}
+
+.soso_left>img {
+	width: 100%;
+}
+
+.soso_right {
+	position: relative;
+	float: left;
+	width: 625px;
+	height: 106px;
+	/* border: red 1px solid; */
+	margin-left: 110px;
+	margin-top: 27px;
+	color: #9999;
+}
+
+.soso_right input {
+	width: 491px;
+	height: 36px;
+	padding: 5px 3px;
+	border: #FF0000 2px solid;
+}
+
+.soso_right>.sub_button {
+	position: absolute;
+	top: -10px;
+	margin-top: 10px;
+	width: 120px;
+	height: 50px;
+	border: 0;
+	background-color: #FF0000;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 5px;
+	color: white;
+	line-height: 50px;
+}
+
+/* 输入框下的列表 */
+.soso_right>ul {
+	margin-top: 5px;
+	margin-left: -10px;
+	float: left;
+}
+
+.soso_right>ul li {
+	float: left;
+	padding: 0px 10px;
+	border-right: solid 1px;
+	font-size: 14px;
+}
+
+.soso_red {
+	color: #FF0000;
+}
+
+.soso_right>ul li:last-of-type {
+	border: 0px;
+}
+
+
+/* SOSO栏end*/
+
+
+/* nav导航栏start */
+#nav {
+	height: 36px;
+}
+
+.logo {
+	width: 100px;
+}
+
+#nav>.container>ul {
+	float: left;
+
+}
+
+#nav>.container>ul>li {
+	float: left;
+	padding-right: 20px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 30px;
+}
+
+#nav>.container>ul>.nav_first {
+	width: 180px;
+	height: 36px;
+	font-weight: 600;
+	color: white;
+	background-color: #FF0036;
+	text-align: left;
+	margin-right: 10px;
+	line-height: 36px;
+	text-indent: 16px;
+	position: relative;
+}
+
+.nav_first_ul {
+	width: 200px;
+	height: 500px;
+	background-color: rgba(0, 0, 0, .55);
+	position: absolute;
+	z-index: 1000;
+
+
+}
+
+.nav_first_ul>li {
+	width: 200px;
+	height: 31.2px;
+
+}
+
+.nav_first_ul>li>a {
+	color: white;
+	font-size: 14px;
+	font-weight: 100;
+}
+
+
+
+.nav_details {
+	width: 852px;
+	height: 500px;
+	background-color: #f2f2f2;
+	position: absolute;
+	top: 0px;
+	left: 200px;
+	display: none;
+	color: #000000;
+}
+
+.nav_details_left {
+	width: 630px;
+	height: 100%;
+	background-color: #fff;
+	float: left;
+
+}
+
+.nav_details_right {
+	width: 209px;
+	height: 100%;
+	background-color: #fff;
+	float: right;
+
+	overflow: hidden;
+}
+
+.nav_details_right img {
+	width: 93px;
+	height: 47px;
+}
+
+.nav_details>img {
+	width: 100%;
+}
+
+/* nav导航栏end */
+
+/* 轮播图start */
+#banner {
+	height: 500px;
+	border-top: #FF0000 2px solid;
+}
+
+#banner>.container {
+	position: relative;
+	cursor: pointer;
+
+}
+
+#banner>.container>img {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 499px;
+	margin-top: -3px;
+
+
+}
+
+#banner>.container>ul {
+	position: absolute;
+	top: 480px;
+	left: 500px;
+
+
+}
+
+#banner>.container>ul>li {
+	width: 25px;
+	height: 5px;
+	border: 1px black solid;
+	float: left;
+	margin-right: 20px;
+	background-color: rgba(255, 255, 255, 0.1);
+
+
+}
+
+/* 轮播图end */
+
+/* flash 闪购列模块 start */
+#flash {
+	height: 394px;
+	margin-top: 20px;
+}
+
+#flash>.container>.flash_left {
+	width: 234px;
+	margin-right: 26px;
+	float: left;
+
+}
+
+#flash>.container>.flash_right {
+	width: 485px;
+	float: right;
+}
+
+#flash>.container>.flash_middle {
+	float: left;
+	width: 485px;
+}
+
+#flash>.container p {
+	background: white;
+	height: 55px;
+	line-height: 55px;
+	font-weight: 550;
+	position: relative;
+
+}
+
+.span_an {
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.span_en {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.span_img {
+
+	position: absolute;
+	padding: 17px 15px;
+	right: 0px;
+}
+
+.flash_left img {
+	width: 234px;
+	height: 316px;
+}
+
+.flash_middle img {
+	width: 485px;
+	height: 316px;
+}
+
+.flash_right img {
+	width: 485px;
+	height: 316px;
+}
+
+/* flash 闪购列模块 end */
+
+
+/* hot log 热门logo start */
+#hot_log .container {
+	height: 327px;
+	background-color: white;
+
+}
+
+#hot_log>.container img {
+	width: 122px;
+	height: 108px;
+}
+
+#hot_log>.container a {
+	display: block;
+	float: left;
+	/* 为了无缝隙 */
+	margin-left: 4px;
+	/* 为了填充满 */
+	width: 122px;
+	height: 108px;
+	text-align: center;
+	color: #55A532;
+	position: relative;
+}
+
+#hot_log button {
+	float: right;
+	width: 122px;
+	height: 108px;
+	border: 0;
+	background: white;
+	text-align: center;
+	position: relative;
+
+}
+
+.span_right {
+	position: absolute;
+	bottom: 0px;
+	left: 35px;
+}
+
+#hot_log button>svg {
+	font-size: 40px;
+	transition: all 0.8s;
+	/* 输入rotate不转？？？*/
+}
+
+.hot_log_background {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	top: 0px;
+	display: none;
+}
+
+.abdiv {
+	/* cnm 为了相对定位,不让里面乱跑爷又整了一个 爷是sb？？？*/
+	position: relative;
+	color: white;
+}
+
+.abdiv span:first-child {
+	display: block;
+	width: 75px;
+	height: 15px;
+	position: absolute;
+	top: 35px;
+	left: 25px;
+	font-size: 13px;
+
+}
+
+
+.abdiv>span:last-child {
+	display: block;
+	background-color: red;
+	width: 80px;
+	height: 20px;
+	border-radius: 10px;
+	font-size: 13px;
+	position: absolute;
+	top: 60px;
+	left: 20px;
+}
+
+
+#hot_log>.container>a {
+	transition: all 0.8s;
+	/* 让logo转起来 */
+}
+
+/* hot log 热门logo end */
+
+
+/* 天猫超市 start*/
+#shopp {
+	height: 665px;
+	margin-top: 20px;
+}
+
+.shopplogo {
+	padding-bottom: 10px;
+}
+
+.shopplogo img {
+	width: 214px;
+	height: 25px;
+}
+
+#shopp .shopp_left img {
+	width: 235px;
+	height: 618px;
+
+
+}
+
+.shopp_left a {
+	float: left;
+	display: block;
+	width: 235px;
+	height: 618px;
+	border: transparent 1px solid;
+}
+
+
+
+#shopp ul a {
+	float: left;
+	display: block;
+	width: 236px;
+	height: 302px;
+	border: transparent 1px solid;
+	/* 防止选中时兄弟元素抖动*/
+	margin-left: 17.5px;
+	margin-bottom: 11px;
+	overflow: hidden;
+	background-color: white;
+}
+
+#shopp li img {
+	width: 185px;
+	height: 185px;
+	padding-top: 21px;
+	padding-left: 22px;
+
+}
+
+#shopp li p {
+	font-size: 14px;
+	width: 135px;
+	height: 40px;
+	padding: 5px 50px;
+	line-height: 20px;
+	color: #000000;
+}
+
+#shopp li span {
+	color: red;
+	font-size: 18px;
+	margin-left: 90px;
+}
+
+/* 标题 */
+.shopp_span_an {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.shopp_span_en {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+/* 天猫超市end*/
+/*页面长的广告茅台 nike  start */
+#adp {
+	height: 90px;
+	margin: 15px 0px;
+
+}
+
+#adp img {
+	width: 100%;
+	height: 100%;
+}
+
+/*页面长的广告茅台 nike  end */
+
+/* endlogo  */
+.endlogo {
+	align-content: center;
+	text-align: center;
+	margin: 20px auto;
+	color: #e0e0e0;
+
+}
+
+
+/* 底部字太多了吧？？？？？ 底部截图 */
+.bottomimg img {
+	width: 100%;
+}
+
+#bottom1 {
+	background-color: white;
+}
+
+#bottom2 {
+	background-color: #000000;
+}
