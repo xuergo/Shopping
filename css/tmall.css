@@ -126,8 +126,8 @@ a {
 }
 
 /* 收藏夹 */
-	
-.lovesfather{
+
+.lovesfather {
 	background-color: white;
 	border-left: #E0E0E0 0.05px solid;
 }
@@ -135,7 +135,7 @@ a {
 .loves {
 	width: 80px;
 	height: 50px;
-	border: #E0E0E0 0.05px solid; 
+	border: #E0E0E0 0.05px solid;
 	border-top: 0px;
 	background-color: white;
 	position: absolute;
@@ -147,9 +147,10 @@ a {
 }
 
 /* 商家 */
-.business{
-	display: flex;
+.business {
+	display: none;
 	flex-wrap: wrap;
+	
 }
 
 /* 顶部栏end */
@@ -179,7 +180,7 @@ a {
 	height: 106px;
 	/* border: red 1px solid; */
 	margin-left: 110px;
-	margin-top: 27px;
+	margin-top: 26px;
 	color: #9999;
 }
 
@@ -261,9 +262,11 @@ a {
 	background-color: #FF0036;
 	text-align: left;
 	margin-right: 10px;
+	margin-top: 0px;
 	line-height: 36px;
 	text-indent: 16px;
 	position: relative;
+	
 }
 
 .nav_first_ul {
@@ -377,6 +380,64 @@ a {
 	height: 394px;
 	margin-top: 20px;
 }
+
+#flash>.container {
+	position: relative;
+}
+
+/* 固定导航栏 */
+.fixed_father {
+	position: absolute;
+	left: -50px;
+	width: 135px;
+	height: 432px;
+	top: -150px;
+	/* border: 1px hotpink solid; */
+}
+
+.fixed_father1 {
+	width: 35px;
+	height: 332px;
+	position: fixed;
+
+
+	z-index: 1000;
+	/* border: 1px red solid; */
+	transition: height 0.5s;
+}
+
+.fixed_nav {
+	width: 35px;
+	height: 0px;
+	position: absolute;
+	bottom: 0px;
+	overflow: hidden;
+	transition: height 0.5s;
+}
+
+.fixed_nav li {
+	width: 36px;
+	height: 36px;
+	font-size: 13px;
+	color: white;
+	text-align: center;
+	margin-bottom: 1px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.fixed_nav li a {
+	color: white;
+}
+
+.fixed_nav li a:hover {
+	color: white;
+}
+
+.nav_lh {
+	line-height: 33px;
+}
+
+
 
 #flash>.container>.flash_left {
 	width: 234px;
@@ -650,4 +711,12 @@ a {
 
 #bottom2 {
 	background-color: #000000;
+}
+
+/* 锚点div */
+.anchordiv {
+	height: 60px;
+	/* 应该让板块距离上方距离相等
+	 本憨憨让它div的高度一样实现了*/
+
 }
