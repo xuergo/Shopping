@@ -197,10 +197,14 @@ $(function() {
 		} else if ($(this).hasClass("nav6")) {
 			$(this).css("background-color", navbacks[5])
 		}
+
 	}, function() {
 		$(this).css("background-color", "");
 		$(".fixed_nav li:first").css("background-color", "red"); //开头和结束的颜色不变
 		$(".fixed_nav li:last").css("background-color", "rgba(0,0,0,0.3)");
+		nvbackcolor();
+
+
 	})
 
 	$(".fixed_nav li a").hover(function() {
@@ -211,9 +215,13 @@ $(function() {
 	})
 
 	//侧边导航列表换色滑动换色，就是根据鼠标滚动的值换  用if else 是不是有点麻烦？？？
+	var zhi = 0;
 	$(window).scroll(function() {
-		var zhi = $(this).scrollTop();
-		console.log('zhi', zhi);
+		zhi = $(this).scrollTop();
+		// console.log('zhi', zhi);
+		nvbackcolor();
+	});
+	function nvbackcolor() {
 		if (zhi > 685 && zhi <= 1809) {
 			$(".nav1").css("background-color", navbacks[0]).siblings().css("background-color", "");;
 		} else if (zhi > 1809 && zhi <= 2662) {
@@ -224,15 +232,14 @@ $(function() {
 			$(".nav4").css("background-color", navbacks[3]).siblings().css("background-color", "");
 		} else if (zhi > 4296 && zhi <= 5165) {
 			$(".nav5").css("background-color", navbacks[4]).siblings().css("background-color", "");
-		} else if (zhi > 5165 && zhi <= 5953) {
+		} else if (zhi > 5165 ) {
 			$(".nav6").css("background-color", navbacks[5]).siblings().css("background-color", "");
 		}
 		$(".fixed_nav li:first").css("background-color", "red"); //开头和结束的颜色不变
 		$(".fixed_nav li:last").css("background-color", "rgba(0,0,0,0.3)");
-	})
 
-
-
+	}
+	
 
 
 })
